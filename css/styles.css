@@ -809,3 +809,44 @@ ul {
   padding-top: 1rem;
   font-size: 0.82rem;
 }
+@media (max-width: 900px) {
+  .footer-grid,
+  .team-row,
+  .gallery-grid,
+  .faq-grid,
+  .card-grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .topbar__inner {
+    flex-wrap: wrap;
+  }
+  .site-menu {
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+  }
+  .topbar__action {
+    display: none;
+  }
+  .feature-split,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+  .card-grid--3,
+  .gallery-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .brand__text span {
+    font-size: 0.65rem;
+  }
+  .feature-split__media .badge {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
