@@ -367,6 +367,7 @@ ul {
 }
 .section--muted {
   background: var(--bg-sand-deep);
+  padding-bottom: 110px;
 }
 .card-grid {
   display: grid;
@@ -382,10 +383,14 @@ ul {
 .faq-card {
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
   overflow: hidden;
+  border-radius: var(--radius-lg);
+
   box-shadow: var(--shadow-soft);
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.team-card {
+  overflow: visible;
 }
 .property-card:hover,
 .service-card:hover,
@@ -393,6 +398,7 @@ ul {
 .testimonial-card:hover,
 .faq-card:hover {
   transform: translateY(-6px);
+  border-radius: var(--radius-lg);
   box-shadow: 0 20px 40px rgba(18,38,58,0.14);
   border-color: var(--gold);
 }
@@ -510,6 +516,8 @@ ul {
   height: 100%;
   object-fit: cover;
   aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+
 }
 .team-card h3 {
   margin: 1rem 0 0.25rem;
